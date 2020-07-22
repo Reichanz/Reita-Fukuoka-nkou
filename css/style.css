@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ヘッダーのレイアウト */
+header {
+  background-color: #f7f7f7;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+header .headerWidth {
+  width: 1040px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: inherit;
+  margin: 0 auto;
+}
+
+header .headerWidth ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+header .headerWidth .headerTitle {
+  color: #272727;
+}
+
+header .headerWidth ul li {
+  font-size: 12px;
+  color: #666666;
+  border-left: solid 1px #cccccc;
+  padding: 0 9px;
+}
+
+header .headerWidth .enterInfo {
+  border-left: none;
+  margin-left: 248px;
+}
+
+header .headerWidth ul li:first-child {
+  border-left: none;
+}
+
+header .headerWidth a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ホバー時の装飾 */
+header .headerWidth ul a:hover {
+  border-bottom: solid 0.5px #666666;
+}
+
+header .headerWidth .loginBtn span:hover {
+  border-bottom: solid 1px #040066;
+}
+
+header .loginBtn {
+  color: #040066;
+  width: 118px;
+  background-color: #d9d9d9;
+  font-size: 12px;
+  height: 32px;
+  padding-top: 7px;
+}
+
+header .loginBtn:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  background-image: url(../images/nkou_icon.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0 5px 0 4px;
+}
+
+#mv .headerLogo {
+  width: 1040px;
+  height: 93px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#mv .tell {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 33px;
+}
+
+#mv .tell small {
+  color: #919aa0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#mv .mainNav {
+  display: flex;
+  width: 1040px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#mv .mainNav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mv .mainNav01 {
+  height: 31px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 4px;
+}
+
+#mv .mainNav01 li {
+  border-left: solid 1px #dcdddd;
+  padding: 0 30px;
+}
+
+#mv .mainNav01 .aboutNkou {
+  color: #20296f;
+}
+
+#mv .mainNav01 .allianceNkou {
+  border-right: solid 1px #dcdddd;
+}
+
+#mv .mainNav01 .aboutNkou:after {
+  content: "";
+  display: list-item;
+  width: 76px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_01.png");
+  margin: 0 auto;
+}
+
+#mv .mainNav01 .courseNkou:after {
+  content: "";
+  display: list-item;
+  width: 62px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_02.png");
+  margin: 0 auto;
+}
+
+#mv .mainNav01 .courseNkou:hover:after {
+  filter: invert(100%);
+}
+
+#mv .mainNav01 .commuteNkou:after {
+  content: "";
+  display: list-item;
+  width: 96px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_03.png");
+  margin: 0 auto;
+}
+
+#mv .mainNav01 .commuteNkou:hover:after {
+  filter: invert(100%);
+}
+
+#mv .mainNav01 .allianceNkou:after {
+  content: "";
+  display: list-item;
+  width: 90px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_04.png");
+  margin: 0 auto;
+}
+
+#mv .mainNav01 .allianceNkou:hover:after {
+  filter: invert(100%);
+}
+
+#mv .mainNav02 {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+#mv .mainNav02 li {
+  width: 170px;
+  height: 40px;
+  border: solid 1px #272727;
+  margin-left: 12px;
+  position: relative;
+}
+
+#mv .mainNav02 li:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 3px;
+}
+
+#mv .mainNav02 a {
+  display: block;
+  padding: 10px 0;
+}
+
+/* ホバー時の装飾 */
+#mv .mainNav02 a:hover {
+  background-color: #20296f;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+#mv .aboutNavList {
+  width: 100%;
+  background-color: #191836;
+}
+
+#mv .aboutNavList ul {
+  width: 1060px;
+  height: 88px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-left: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#mv .aboutNavList ul li {
+  font-size: 14px;
+  height: 33px;
+  padding: 7px;
+  letter-spacing: 0.9px;
+  display: inline-block;
+}
+
+#mv .aboutNavList ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px;
+}
+
+#mv .aboutNavList ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 15px;
+  margin-bottom: 3px;
+  background: url("../images/icon_backslash.png") no-repeat;
+  vertical-align: middle;
+}
+
+/* 擬似要素の打ち消し */
+#mv .aboutNavList .qualification:before {
+  content: none;
+}
+
+/* ホバー時の装飾 */
+#mv .aboutNavList ul li a:hover {
+  color: #191836;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+#mv .mainVisual {
+  position: relative;
+}
+
+#mv .mainVisual img {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+}
+
+#mv h1 {
+  font-family: AxisStd-Light;
+  font-size: 52px;
+  font-weight: 400;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  letter-spacing: 13px;
+}
+
+#mv .mainVisual h1:after {
+  content: "";
+  display: list-item;
+  width: 93px;
+  height: 13px;
+  background-image: url("../images/imgText_about.png");
+  background-size: contain;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.topicPath ul {
+  list-style: none;
+  display: flex;
+}
+
+.subTitle {
+  margin: 0 auto;
+}
+
+.subTitle h2 {
+  text-align: center;
+}
+
+.subTitle p {
+  width: 640px;
+  margin: 0 auto;
+}
+
+#policy {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#policy .policyTag {
+  display: flex;
+  justify-content: space-between;
+}
+
+#policy ul {
+  list-style: none;
+}
+
+#policy .nstandsBtn {
+  margin: 0 auto;
+  width: 686px;
+  height: 327px;
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+#policy .nstandDetail {
+  width: 424px;
+}
+
+#charm {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+#charm .charmTag01 {
+  display: flex;
+}
+
+#charm .charmTag02 {
+  display: flex;
+}
+
+#basicProgram {
+  width: 1060px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+
+#basicProgram .basicProgram01 {
+  display: flex;
+}
+
+#advancedProgram {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+#basicProgram .basicProgram02 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram01 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram02 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram03 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram04 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram05 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram06 {
+  display: flex;
+}
+
+#advancedProgram .advancedProgram07 {
+  display: flex;
+}
