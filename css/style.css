@@ -302,6 +302,18 @@ header .loginBtn:before {
   letter-spacing: 13px;
 }
 
+#mv .mainVisual h1:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+}
+
 #mv .mainVisual h1:after {
   content: "";
   display: list-item;
@@ -310,68 +322,283 @@ header .loginBtn:before {
   background-image: url("../images/imgText_about.png");
   background-size: contain;
   list-style: none;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
+}
+
+/* パンくずリストの装飾 */
+.topicPath {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px black;
 }
 
 .topicPath ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 1060px;
+  line-height: 25px;
   list-style: none;
-  display: flex;
+}
+.topicPath ul li {
+  display: inline-block;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #272727;
+  display: inline-block;
+}
+
+.topicPath ul li a {
+  text-decoration: none;
+  color: #36538d;
+}
+
+.topicPath ul .nkouPath:before {
+  content: ">";
+  font-size: 10px;
+  padding: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+/* パンくずリストのホバー時の装飾 */
+.topiPath ul li a:hover {
+  border-bottom: solid 1px #36538d;
 }
 
 .subTitle {
+  width: 1040px;
   margin: 0 auto;
+  padding-top: 45px;
 }
 
 .subTitle h2 {
+  font-size: 33px;
   text-align: center;
+  font-weight: normal;
+  letter-spacing: 12px;
+  line-height: 60px;
+}
+
+.subTitle h3 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 35px;
+  margin: 60px 0;
+  font-weight: normal;
+  position: relative;
+}
+
+.subTitle h3:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 .subTitle p {
   width: 640px;
   margin: 0 auto;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
 }
 
+/* 「教育方針」のレイアウト */
 #policy {
   width: 1040px;
   margin: 0 auto;
 }
 
+#policy h2 {
+  border-bottom: solid 1px #272727;
+}
+
 #policy .policyTag {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 295px;
+}
+
+#policy .policyTag img {
+  margin-right: -150px;
 }
 
 #policy ul {
   list-style: none;
+  width: 572px;
+  padding: 0;
+}
+
+#policy .policyTag ul li {
+  height: 53px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#policy .policyTag ul span {
+  width: 89px;
+  line-height: 53px;
+  font-size: 24px;
+  border-right: solid 1px #272727;
+  margin-right: 15px;
 }
 
 #policy .nstandsBtn {
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   width: 686px;
   height: 327px;
   display: flex;
   background-color: #f7f7f7;
 }
 
-#policy .nstandDetail {
-  width: 424px;
+#policy .nstandsBtn .standardImg {
+  margin: 32px 20px 32px 42px;
 }
 
+#policy .nstandsBtn .nstandDetail {
+  width: 424px;
+  height: 265px;
+  margin-top: 32px;
+}
+
+#policy .nstandsBtn .nstandDetail h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#policy .nstandsBtn .nstandDetail p {
+  text-align-last: justify;
+  width: 100%;
+  height: 112px;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#policy .nstandsBtn .nstandDetail p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 137%;
+}
+
+#policy .nstandsBtn .nstandDetail .readMore {
+  position: absolute;
+  top: 226px;
+  left: 226px;
+  margin-left: 15px;
+}
+
+/* リンクの範囲を親要素まで広げる */
+.nstandsBtn {
+  position: relative;
+}
+
+.nstandsBtn .nstandDetail a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* N RTANDARDSのホバー時の装飾 */
+.nstandsBtn:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
+}
+
+/* N高の魅力のレイアウト */
 #charm {
   width: 1060px;
   margin: 0 auto;
 }
 
+#charm h2 {
+  border-bottom: solid 1px #272727;
+  padding-bottom: 15px;
+}
+
 #charm .charmTag01 {
   display: flex;
+  margin: 85px 0 80px 0;
+}
+
+#charm .charmDetail01 {
+  width: 489px;
+  height: 320px;
+}
+
+#charm .charmDetail01 h3 {
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: normal;
+  color: #272727;
+  border-bottom: solid 1px #272727;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+#charm .charmDetail01 p {
+  margin-top: 0;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+}
+
+#charm .charmDetail01 small {
+  display: inline-block;
+  font-size: 12px;
 }
 
 #charm .charmTag02 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 402px;
 }
 
+#charm .charmTag02 .charmDetail02 {
+  width: 489px;
+  height: 230px;
+}
+
+#charm .charmTag02 h3 {
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: normal;
+  color: #272727;
+  border-bottom: solid 1px #272727;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+#charm .charmTag02 p {
+  margin-top: 0;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+}
+
+/* 高卒資格取得のためのBasic Program */
 #basicProgram {
-  width: 1060px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f7f7f7;
 }
