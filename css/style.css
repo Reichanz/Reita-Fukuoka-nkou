@@ -599,12 +599,178 @@ header .loginBtn:before {
 /* 高卒資格取得のためのBasic Program */
 #basicProgram {
   width: 100%;
-  margin: 0 auto;
   background-color: #f7f7f7;
+}
+
+#basicProgram .basicProgramCenter {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+#basicProgram .basicProgramTitle {
+  text-align: center;
+}
+
+#basicProgram .basicProgramTitle h2 {
+  font-size: 33px;
+  font-weight: normal;
+  padding-top: 50px;
+  position: relative;
+}
+
+#basicProgram .basicProgramTitle h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
+}
+
+#basicProgram .basicProgramTitle p {
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 60px;
 }
 
 #basicProgram .basicProgram01 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 {
+  width: 285px;
+  height: 450px;
+  position: relative;
+}
+
+#basicProgram .basicIcon {
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 small {
+  font-size: 11px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 .readMore {
+  position: absolute;
+  top: 92%;
+  margin-left: 15px;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01 small:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 92%;
+}
+
+#basicProgram .basicProgram01 .basicProgramDetail01:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
+}
+
+#basicProgram .basicProgram02 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 115px;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 {
+  width: 285px;
+  height: 450px;
+  position: relative;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 small {
+  font-size: 11px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 .readMore {
+  position: absolute;
+  top: 92%;
+  margin-left: 15px;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02 small:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 92%;
+}
+
+#basicProgram .basicProgram02 .basicProgramDetail02:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram {
@@ -612,32 +778,539 @@ header .loginBtn:before {
   margin: 0 auto;
 }
 
-#basicProgram .basicProgram02 {
-  display: flex;
+#advancedProgram .advancedProgramTitle {
+  text-align: center;
+}
+
+#advancedProgram .advancedProgramTitle h2 {
+  font-size: 33px;
+  font-weight: normal;
+  padding-top: 60px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgramTitle h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 {
+  width: 285px;
+  height: 524px;
+}
+
+#advancedProgram .advancedProgram01 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgramTitle p {
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 60px;
 }
 
 #advancedProgram .advancedProgram01 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 {
+  width: 285px;
+  height: 524px;
+  position: relative;
+}
+
+#advancedProgram .advancedIcon {
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 .readMore {
+  position: absolute;
+  top: 98%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 109%;
+}
+
+#advancedProgram .advancedProgram01 .advancedProgramDetail01:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram02 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 {
+  width: 285px;
+  height: 503px;
+}
+
+#advancedProgram .advancedProgram02 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 {
+  width: 285px;
+  height: 400px;
+  position: relative;
+}
+
+#advancedProgram .advancedIcon {
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 .readMore {
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
+}
+
+#advancedProgram .advancedProgram02 .advancedProgramDetail02:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram03 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 {
+  width: 285px;
+  height: 503px;
+}
+
+#advancedProgram .advancedProgram03 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 {
+  width: 285px;
+  height: 400px;
+  position: relative;
+}
+
+#advancedProgram .advancedIcon {
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 .readMore {
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
+}
+
+#advancedProgram .advancedProgram03 .advancedProgramDetail03:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram04 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram04 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 {
+  width: 285px;
+  height: 430px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 .readMore {
+  position: absolute;
+  top: 97%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
+}
+
+#advancedProgram .advancedProgram04 .advancedProgramDetail04:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram05 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 {
+  width: 285px;
+  height: 503px;
+}
+
+#advancedProgram .advancedProgram05 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 {
+  width: 285px;
+  height: 400px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 .readMore {
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
+}
+
+#advancedProgram .advancedProgram05 .advancedProgramDetail05:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram06 {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 {
+  width: 285px
+  height: 503px;
+}
+
+#advancedProgram .advancedProgram06 .advancedIcon {
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 {
+  width: 285px;
+  height: 400px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 p {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 .readMore {
+  position: absolute;
+  top: 75%;
+  margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06 p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
+}
+
+#advancedProgram .advancedProgram06 .advancedProgramDetail06:hover {
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
+}
+
+#advancedProgram .advancedProgram07 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 {
+    width: 285px;
+    height: 503px;
+}
+
+#advancedProgram .advancedProgram07 .advancedIcon {
+    width: 123px;
+    height: 25px;
+    background-color: #272727;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 {
+    width: 285px;
+    height: 365px;
+    position: relative;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 h3 {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 p {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: normal;
+    text-align: justify;
+    letter-spacing: 0.2px;
+    position: relative;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 .readMore {
+    position: absolute;
+    top: 93%;
+    margin-left: 15px;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07 p:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: url("../images/icon_arrow01.png") no-repeat;
+    position: absolute;
+    top: 129%;
+}
+
+#advancedProgram .advancedProgram07 .advancedProgramDetail07:hover {
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+    -moz-opacity: 0.7; /* FF , Netscape */
+    -khtml-opacity: 0.7; /* Safari 1.x */
+    opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram07 {
