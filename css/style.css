@@ -1313,6 +1313,93 @@ header .loginBtn:before {
     opacity: 0.7;
 }
 
-#advancedProgram .advancedProgram07 {
-  display: flex;
+
+#activity .itTool {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 834px;
+}
+
+#activity .itTool h2 {
+    text-align: center;
+    font-size: 33px;
+    line-height: 59px;
+    padding: 70px 0 80px 0;
+    margin: 0;
+    font-weight: normal;
+    position: relative;
+}
+
+#activity .itTool h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+#activity .itTool .itToolFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    height: 503px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#activity .itToolDetails {
+    width: 285px;
+    height: 462px;
+    position: relative;
+}
+
+#activity .itToolDetails h3 {
+    font-size: 22px;
+    line-height: 44px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#activity .itToolDetails p {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: normal;
+    text-align: justify;
+    position: relative;
+}
+
+#activity .itTool .itToolDetails .readMore {
+    position: absolute;
+    top: 93%;
+    margin-left: 15px;
+}
+
+#activity .itTool a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1060px;
+    height: 503px;
+}
+
+#activity .itTool .itToolDetails p:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: url("../images/icon_arrow01.png") no-repeat;
+    position: absolute;
+    top: 129%;
+}
+
+#activity .itToolFlex:hover {
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+    -moz-opacity: 0.7; /* FF , Netscape */
+    -khtml-opacity: 0.7; /* Safari 1.x */
+    opacity: 0.7;
 }
