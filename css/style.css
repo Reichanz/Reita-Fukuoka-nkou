@@ -1,318 +1,320 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .fix-header {
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .side {
-    width: 1060px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+  width: 1060px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logoImg {
-    width: 170px;
-    height: 36px;
-    margin-top: 7px;
+  width: 170px;
+  height: 36px;
+  margin-top: 7px;
 }
 
 .telTime {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .telImg {
-    width: 190px;
-    height: 21px;
-    margin-top: 15px;
+  width: 190px;
+  height: 21px;
+  margin-top: 15px;
 }
 
 .time {
-    font-size: 10px;
-    margin: 0;
-    text-align: center;
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
 }
 
 .side p {
-    width: 170px;
-    height: 40px;
-    text-align: center;
-    color: #040066;
-    border: solid 1px #040066;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-top: 8px;
-    background-color: #ffffff;
-    position: relative;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  color: #040066;
+  border: solid 1px #040066;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-top: 8px;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .side p:after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 12px;
-    right: 3px;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 3px;
 }
 
 .side p:hover {
-    color: #ffffff;
-    background-color: #040066;
+  color: #ffffff;
+  background-color: #040066;
 }
 
 .side p:hover:after {
-    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+    brightness(107%);
 }
 
 .side a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ヘッダーのレイアウト */
 header {
-    background-color: #f7f7f7;
-    height: 32px;
-    display: flex;
-    align-items: center;
+  background-color: #f7f7f7;
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 header .headerWidth {
-    width: 1040px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: inherit;
-    margin: 0 auto;
+  width: 1040px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: inherit;
+  margin: 0 auto;
 }
 
 header .headerWidth ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 header .headerWidth .headerTitle {
-    color: #272727;
+  color: #272727;
 }
 
 header .headerWidth ul li {
-    font-size: 12px;
-    color: #666666;
-    border-left: solid 1px #cccccc;
-    padding: 0 9px;
+  font-size: 12px;
+  color: #666666;
+  border-left: solid 1px #cccccc;
+  padding: 0 9px;
 }
 
 header .headerWidth .enterInfo {
-    border-left: none;
-    margin-left: 248px;
+  border-left: none;
+  margin-left: 248px;
 }
 
 header .headerWidth ul li:first-child {
-    border-left: none;
+  border-left: none;
 }
 
 header .headerWidth a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ホバー時の装飾 */
 header .headerWidth ul a:hover {
-    border-bottom: solid 0.5px #666666;
+  border-bottom: solid 0.5px #666666;
 }
 
 header .headerWidth .loginBtn span:hover {
-    border-bottom: solid 1px #040066;
+  border-bottom: solid 1px #040066;
 }
 
 header .loginBtn {
-    color: #040066;
-    width: 118px;
-    background-color: #d9d9d9;
-    font-size: 12px;
-    height: 32px;
-    padding-top: 7px;
+  color: #040066;
+  width: 118px;
+  background-color: #d9d9d9;
+  font-size: 12px;
+  height: 32px;
+  padding-top: 7px;
 }
 
 header .loginBtn:before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 20px;
-    background-image: url(../images/nkou_icon.png);
-    background-size: contain;
-    vertical-align: middle;
-    margin: 0 5px 0 4px;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  background-image: url(../images/nkou_icon.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0 5px 0 4px;
 }
 
 #mv .headerLogo {
-    width: 1040px;
-    height: 93px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 1040px;
+  height: 93px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #mv .tell {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: 33px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 33px;
 }
 
 #mv .tell small {
-    color: #919aa0;
-    text-align: center;
-    padding-top: 5px;
+  color: #919aa0;
+  text-align: center;
+  padding-top: 5px;
 }
 
 #mv .mainNav {
-    display: flex;
-    width: 1040px;
-    height: 60px;
-    margin: 0 auto;
-    padding: 0;
+  display: flex;
+  width: 1040px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #mv .mainNav a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #mv .mainNav01 {
-    height: 31px;
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin-top: 4px;
+  height: 31px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 4px;
 }
 
 #mv .mainNav01 li {
-    font-size: 15px;
-    border-left: solid 1px #dcdddd;
-    padding: 0 30px;
-    text-align: center;
+  font-size: 15px;
+  border-left: solid 1px #dcdddd;
+  padding: 0 30px;
+  text-align: center;
 }
 
 #mv .mainNav01 .aboutNkou {
-    color: #20296f;
+  color: #20296f;
 }
 
 #mv .mainNav01 .allianceNkou {
-    border-right: solid 1px #dcdddd;
+  border-right: solid 1px #dcdddd;
 }
 
 #mv .mainNav01 .aboutNkou:after {
-    content: "";
-    display: list-item;
-    width: 76px;
-    height: 10px;
-    background-image: url("../images/global_nav_btn_01.png");
-    margin: 0 auto;
+  content: "";
+  display: list-item;
+  width: 76px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_01.png");
+  margin: 0 auto;
 }
 
 #mv .mainNav01 .courseNkou:after {
-    content: "";
-    display: list-item;
-    width: 62px;
-    height: 10px;
-    background-image: url("../images/global_nav_btn_02.png");
-    margin: 0 auto;
+  content: "";
+  display: list-item;
+  width: 62px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_02.png");
+  margin: 0 auto;
 }
 
 #mv .mainNav01 .courseNkou:hover:after {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 #mv .mainNav01 .commuteNkou:after {
-    content: "";
-    display: list-item;
-    width: 96px;
-    height: 10px;
-    background-image: url("../images/global_nav_btn_03.png");
-    margin: 0 auto;
+  content: "";
+  display: list-item;
+  width: 96px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_03.png");
+  margin: 0 auto;
 }
 
 #mv .mainNav01 .commuteNkou:hover:after {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 #mv .mainNav01 .allianceNkou:after {
-    content: "";
-    display: list-item;
-    width: 90px;
-    height: 10px;
-    background-image: url("../images/global_nav_btn_04.png");
-    margin: 0 auto;
+  content: "";
+  display: list-item;
+  width: 90px;
+  height: 10px;
+  background-image: url("../images/global_nav_btn_04.png");
+  margin: 0 auto;
 }
 
 #mv .mainNav01 .allianceNkou:hover:after {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 #mv .mainNav02 {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-    margin-top: 0;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
 }
 
 #mv .mainNav02 li {
-    width: 170px;
-    height: 40px;
-    border: solid 1px #272727;
-    margin-left: 12px;
-    position: relative;
+  width: 170px;
+  height: 40px;
+  border: solid 1px #272727;
+  margin-left: 12px;
+  position: relative;
 }
 
 #mv .mainNav02 li:after {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 12px;
-    right: 3px;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 3px;
 }
 
 #mv .mainNav02 a {
-    display: block;
-    padding: 10px 0;
+  display: block;
+  padding: 10px 0;
 }
 
 /* ホバー時の装飾 */
 #mv .mainNav02 li:hover:after {
-    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+    brightness(107%);
 }
 
 #mv .mainNav02 a:hover {
-    background-color: #20296f;
-    transition: all 0.3s ease;
-    color: #ffffff;
+  background-color: #20296f;
+  transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 #mv .aboutNavList {
-    width: 100%;
-    background-color: #191836;
-    position: relative;
+  width: 100%;
+  background-color: #191836;
+  position: relative;
 }
 
 #mv .triangle {
-    width: 0;
+  width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -323,2326 +325,2323 @@ header .loginBtn:before {
 }
 
 #mv .aboutNavList ul {
-    width: 1060px;
-    height: 88px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 4px;
-    padding-left: 0;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
+  width: 1060px;
+  height: 88px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-left: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 #mv .aboutNavList ul li {
-    font-size: 14px;
-    height: 33px;
-    padding: 7px;
-    letter-spacing: 0.9px;
-    display: inline-block;
+  font-size: 14px;
+  height: 33px;
+  padding: 7px;
+  letter-spacing: 0.9px;
+  display: inline-block;
 }
 
 #mv .aboutNavList ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px;
 }
 
 #mv .aboutNavList ul li::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    margin-right: 15px;
-    margin-bottom: 3px;
-    background: url("../images/icon_backslash.png") no-repeat;
-    vertical-align: middle;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 15px;
+  margin-bottom: 3px;
+  background: url("../images/icon_backslash.png") no-repeat;
+  vertical-align: middle;
 }
 
 /* 擬似要素の打ち消し */
 #mv .aboutNavList .qualification:before {
-    content: none;
+  content: none;
 }
 
 /* ホバー時の装飾 */
 #mv .aboutNavList ul li a:hover {
-    color: #191836;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
+  color: #191836;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 #mv .mainVisual {
-    position: relative;
+  position: relative;
 }
 
 #mv .mainVisual img {
-    width: 100%;
-    height: 530px;
-    object-fit: cover;
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
 }
 
 #mv h1 {
-    font-size: 52px;
-    font-weight: 400;
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    letter-spacing: 13px;
+  font-size: 52px;
+  font-weight: 400;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  letter-spacing: 13px;
 }
 
 #mv .mainVisual h1:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 40px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: #ffffff;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
 }
 
 #mv .mainVisual h1:after {
-    content: "";
-    display: list-item;
-    width: 93px;
-    height: 13px;
-    background-image: url("../images/imgText_about.png");
-    background-size: contain;
-    list-style: none;
-    margin: 40px auto 0 auto;
+  content: "";
+  display: list-item;
+  width: 93px;
+  height: 13px;
+  background-image: url("../images/imgText_about.png");
+  background-size: contain;
+  list-style: none;
+  margin: 40px auto 0 auto;
 }
 
 /* 画像サイズ指定 */
 #mv .headerLogo .nkouLogoImg {
-    width: 211px;
-    height: 45px;
+  width: 211px;
+  height: 45px;
 }
 
 #mv .headerLogo .tell img {
-    width: 210px;
-    height: 28px;
+  width: 210px;
+  height: 28px;
 }
 
 /* パンくずリストの装飾 */
 .topicPath {
-    width: 100%;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    border-bottom: solid 1px black;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px black;
 }
 
 .topicPath ul {
-    padding: 0;
-    margin: 0 auto;
-    width: 1060px;
-    line-height: 25px;
-    list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 1060px;
+  line-height: 25px;
+  list-style: none;
 }
 .topicPath ul li {
-    display: inline-block;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-    color: #272727;
-    display: inline-block;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #272727;
+  display: inline-block;
 }
 
 .topicPath ul li a {
-    text-decoration: none;
-    color: #36538d;
+  text-decoration: none;
+  color: #36538d;
 }
 
 .topicPath ul .nkouPath:before {
-    content: ">";
-    font-size: 10px;
-    padding: 0 4px 3px 0;
-    vertical-align: middle;
+  content: ">";
+  font-size: 10px;
+  padding: 0 4px 3px 0;
+  vertical-align: middle;
 }
 
 /* パンくずリストのホバー時の装飾 */
 .topiPath ul li a:hover {
-    border-bottom: solid 1px #36538d;
+  border-bottom: solid 1px #36538d;
 }
 
 .subTitle {
-    width: 1040px;
-    margin: 0 auto;
-    padding-top: 45px;
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 45px;
 }
 
 .subTitle h2 {
-    font-size: 33px;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 12px;
-    line-height: 60px;
+  font-size: 33px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 12px;
+  line-height: 60px;
 }
 
 .subTitle h3 {
-    text-align: center;
-    font-size: 22px;
-    line-height: 35px;
-    margin: 60px 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 22px;
+  line-height: 35px;
+  margin: 60px 0;
+  font-weight: normal;
+  position: relative;
 }
 
 .subTitle h3:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -25px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 .subTitle p {
-    width: 640px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 1px;
+  width: 640px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
 }
 
 /* 「教育方針」のレイアウト */
 #policy {
-    width: 1040px;
-    margin: 0 auto;
+  width: 1040px;
+  margin: 0 auto;
 }
 
 #policy h2 {
-    border-bottom: solid 1px #272727;
+  border-bottom: solid 1px #272727;
 }
 
 #policy .policyTag {
-    display: flex;
-    justify-content: space-around;
-    height: 295px;
+  display: flex;
+  justify-content: space-around;
+  height: 295px;
 }
 
 #policy .policyTag img {
-    margin-right: -150px;
+  margin-right: -150px;
 }
 
 #policy ul {
-    list-style: none;
-    width: 572px;
-    padding: 0;
+  list-style: none;
+  width: 572px;
+  padding: 0;
 }
 
 #policy .policyTag ul li {
-    height: 53px;
-    font-size: 19px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  height: 53px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 #policy .policyTag ul span {
-    width: 89px;
-    line-height: 53px;
-    font-size: 24px;
-    border-right: solid 1px #272727;
-    margin-right: 15px;
+  width: 89px;
+  line-height: 53px;
+  font-size: 24px;
+  border-right: solid 1px #272727;
+  margin-right: 15px;
 }
 
 #policy .nstandsBtn {
-    margin: 80px auto 0 auto;
-    width: 686px;
-    height: 327px;
-    display: flex;
-    background-color: #f7f7f7;
+  margin: 80px auto 0 auto;
+  width: 686px;
+  height: 327px;
+  display: flex;
+  background-color: #f7f7f7;
 }
 
 #policy .nstandsBtn .standardImg {
-    margin: 32px 20px 32px 42px;
+  margin: 32px 20px 32px 42px;
 }
 
 #policy .nstandsBtn .nstandDetail {
-    width: 424px;
-    height: 265px;
-    margin-top: 32px;
+  width: 424px;
+  height: 265px;
+  margin-top: 32px;
 }
 
 #policy .nstandsBtn .nstandDetail h3 {
-    margin: 0;
-    font-size: 22px;
-    font-weight: normal;
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
 }
 
 #policy .nstandsBtn .nstandDetail p {
-    text-align-last: justify;
-    width: 100%;
-    height: 112px;
-    font-size: 16px;
-    line-height: 29px;
-    margin-bottom: 40px;
-    position: relative;
+  text-align-last: justify;
+  width: 100%;
+  height: 112px;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 #policy .nstandsBtn .nstandDetail p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 137%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 137%;
 }
 
 #policy .nstandsBtn .nstandDetail .readMore {
-    position: absolute;
-    top: 226px;
-    left: 226px;
-    margin-left: 15px;
+  position: absolute;
+  top: 226px;
+  left: 226px;
+  margin-left: 15px;
 }
 
 .readMore {
-    width: 70px;
-    height: 13px;
+  width: 70px;
+  height: 13px;
 }
 
 /* リンクの範囲を親要素まで広げる */
 .nstandsBtn {
-    position: relative;
+  position: relative;
 }
 
 .nstandsBtn .nstandDetail a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* N RTANDARDSのホバー時の装飾 */
 .nstandsBtn:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 /* N高の魅力のレイアウト */
 #charm {
-    width: 1060px;
-    margin: 0 auto;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 #charm h2 {
-    border-bottom: solid 1px #272727;
-    padding-bottom: 15px;
+  border-bottom: solid 1px #272727;
+  padding-bottom: 15px;
 }
 
 #charm .charmTag01 {
-    display: flex;
-    justify-content: space-between;
-    margin: 85px 0 80px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 85px 0 80px 0;
 }
 
 #charm .charmTag01 img {
-    width: 489px;
-    height: 514px;
+  width: 489px;
+  height: 514px;
 }
 
 #charm .charmDetail01 {
-    width: 489px;
-    height: 320px;
+  width: 489px;
+  height: 320px;
 }
 
 #charm .charmDetail01 h3 {
-    font-size: 25px;
-    line-height: 45px;
-    font-weight: normal;
-    color: #272727;
-    border-bottom: solid 1px #272727;
-    padding-bottom: 25px;
-    margin-bottom: 15px;
-    margin-top: 0;
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: normal;
+  color: #272727;
+  border-bottom: solid 1px #272727;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 #charm .charmDetail01 p {
-    margin-top: 0;
-    line-height: 29px;
-    letter-spacing: 0.5px;
+  margin-top: 0;
+  line-height: 29px;
+  letter-spacing: 0.5px;
 }
 
 #charm .charmDetail01 small {
-    display: inline-block;
-    font-size: 12px;
+  display: inline-block;
+  font-size: 12px;
 }
 
 #charm .charmTag02 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-    height: 402px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 402px;
 }
 
 #charm .charmTag02 .charmDetail02 {
-    width: 489px;
-    height: 230px;
+  width: 489px;
+  height: 230px;
 }
 
 #charm .charmTag02 h3 {
-    font-size: 25px;
-    line-height: 45px;
-    font-weight: normal;
-    color: #272727;
-    border-bottom: solid 1px #272727;
-    padding-bottom: 25px;
-    margin-bottom: 15px;
-    margin-top: 0;
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: normal;
+  color: #272727;
+  border-bottom: solid 1px #272727;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 #charm .charmTag02 p {
-    margin-top: 0;
-    line-height: 29px;
-    letter-spacing: 0.5px;
+  margin-top: 0;
+  line-height: 29px;
+  letter-spacing: 0.5px;
 }
 
 /* 高卒資格取得のためのBasic Program */
 #basicProgram {
-    width: 100%;
-    background-color: #f7f7f7;
+  width: 100%;
+  background-color: #f7f7f7;
 }
 
 #basicProgram .basicProgramCenter {
-    width: 1060px;
-    margin: 0 auto;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 #basicProgram .basicProgramTitle {
-    text-align: center;
+  text-align: center;
 }
 
 #basicProgram .basicProgramTitle h2 {
-    font-size: 33px;
-    font-weight: normal;
-    padding-top: 50px;
-    position: relative;
+  font-size: 33px;
+  font-weight: normal;
+  padding-top: 50px;
+  position: relative;
 }
 
 #basicProgram .basicProgramTitle h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #basicProgram .basicProgramTitle p {
-    font-size: 16px;
-    line-height: 29px;
-    margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 60px;
 }
 
 #basicProgram .basicProgram01 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 {
-    width: 285px;
-    height: 450px;
-    position: relative;
+  width: 285px;
+  height: 450px;
+  position: relative;
 }
 
 #basicProgram .basicIcon {
-    width: 99px;
-    height: 25px;
-    padding: 5px 0 0 10px;
-    background-color: #272727;
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
 }
 
 #basicProgram .basicIcon img {
-    width: 79px;
-    height: 14px;
+  width: 79px;
+  height: 14px;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 small {
-    font-size: 11px;
-    line-height: 20px;
-    display: inline-block;
+  font-size: 11px;
+  line-height: 20px;
+  display: inline-block;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 .readMore {
-    position: absolute;
-    top: 92%;
-    margin-left: 15px;
+  position: absolute;
+  top: 92%;
+  margin-left: 15px;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01 small:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 92%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 92%;
 }
 
 #basicProgram .basicProgram01 .basicProgramDetail01:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #basicProgram .basicProgram02 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 115px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 115px;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 {
-    width: 285px;
-    height: 450px;
-    position: relative;
+  width: 285px;
+  height: 450px;
+  position: relative;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 small {
-    font-size: 11px;
-    line-height: 20px;
-    display: inline-block;
+  font-size: 11px;
+  line-height: 20px;
+  display: inline-block;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 .readMore {
-    position: absolute;
-    top: 92%;
-    margin-left: 15px;
+  position: absolute;
+  top: 92%;
+  margin-left: 15px;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02 small:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 92%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 92%;
 }
 
 #basicProgram .basicImg {
-    width: 719px;
-    height: 503px;
+  width: 719px;
+  height: 503px;
 }
 
 #basicProgram .basicProgram02 .basicProgramDetail02:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram {
-    width: 1060px;
-    margin: 0 auto;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 #advancedProgram .advancedProgramTitle {
-    text-align: center;
+  text-align: center;
 }
 
 #advancedProgram .advancedProgramTitle h2 {
-    font-size: 33px;
-    font-weight: normal;
-    padding-top: 60px;
-    position: relative;
+  font-size: 33px;
+  font-weight: normal;
+  padding-top: 60px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgramTitle h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 {
-    width: 285px;
-    height: 524px;
+  width: 285px;
+  height: 524px;
 }
 
 #advancedProgram .advancedProgram01 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram01 .advancedIcon img {
-    width: 103px;
-    height: 14px;
+  width: 103px;
+  height: 14px;
 }
 
 #advancedProgram .advancedProgramTitle p {
-    font-size: 16px;
-    line-height: 29px;
-    margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 60px;
 }
 
 #advancedProgram .advancedProgram01 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 {
-    width: 285px;
-    height: 524px;
-    position: relative;
+  width: 285px;
+  height: 524px;
+  position: relative;
 }
 
 #advancedProgram .advancedIcon {
-    width: 99px;
-    height: 25px;
-    padding: 5px 0 0 10px;
-    background-color: #272727;
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 .readMore {
-    position: absolute;
-    top: 98%;
-    margin-left: 15px;
+  position: absolute;
+  top: 98%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 109%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 109%;
 }
 
 #advancedProgram .advancedProgram01 .advancedProgramDetail01:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram02 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 {
-    width: 285px;
-    height: 503px;
+  width: 285px;
+  height: 503px;
 }
 
 #advancedProgram .advancedProgram02 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 {
-    width: 285px;
-    height: 400px;
-    position: relative;
+  width: 285px;
+  height: 400px;
+  position: relative;
 }
 
 #advancedProgram .advancedIcon {
-    width: 99px;
-    height: 25px;
-    padding: 5px 0 0 10px;
-    background-color: #272727;
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 .readMore {
-    position: absolute;
-    top: 94%;
-    margin-left: 15px;
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram02 .advancedProgramDetail02:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram03 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 {
-    width: 285px;
-    height: 503px;
+  width: 285px;
+  height: 503px;
 }
 
 #advancedProgram .advancedProgram03 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 {
-    width: 285px;
-    height: 400px;
-    position: relative;
+  width: 285px;
+  height: 400px;
+  position: relative;
 }
 
 #advancedProgram .advancedIcon {
-    width: 99px;
-    height: 25px;
-    padding: 5px 0 0 10px;
-    background-color: #272727;
+  width: 99px;
+  height: 25px;
+  padding: 5px 0 0 10px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 .readMore {
-    position: absolute;
-    top: 94%;
-    margin-left: 15px;
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram03 .advancedProgramDetail03:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram04 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram04 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 {
-    width: 285px;
-    height: 430px;
-    position: relative;
+  width: 285px;
+  height: 430px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 .readMore {
-    position: absolute;
-    top: 97%;
-    margin-left: 15px;
+  position: absolute;
+  top: 97%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram04 .advancedProgramDetail04:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram05 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 {
-    width: 285px;
-    height: 503px;
+  width: 285px;
+  height: 503px;
 }
 
 #advancedProgram .advancedProgram05 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 {
-    width: 285px;
-    height: 400px;
-    position: relative;
+  width: 285px;
+  height: 400px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 .readMore {
-    position: absolute;
-    top: 94%;
-    margin-left: 15px;
+  position: absolute;
+  top: 94%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram05 .advancedProgramDetail05:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram06 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 {
-    width: 285px
-    height: 503px;
+  width: 285px;
+  height: 503px;
 }
 
 #advancedProgram .advancedProgram06 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 {
-    width: 285px;
-    height: 400px;
-    position: relative;
+  width: 285px;
+  height: 400px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 .readMore {
-    position: absolute;
-    top: 75%;
-    margin-left: 15px;
+  position: absolute;
+  top: 75%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram06 .advancedProgramDetail06:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedProgram07 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 {
-    width: 285px;
-    height: 503px;
+  width: 285px;
+  height: 503px;
 }
 
 #advancedProgram .advancedProgram07 .advancedIcon {
-    width: 123px;
-    height: 25px;
-    background-color: #272727;
+  width: 123px;
+  height: 25px;
+  background-color: #272727;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 {
-    width: 285px;
-    height: 365px;
-    position: relative;
+  width: 285px;
+  height: 365px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 h3 {
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.2px;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  position: relative;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 .readMore {
-    position: absolute;
-    top: 93%;
-    margin-left: 15px;
+  position: absolute;
+  top: 93%;
+  margin-left: 15px;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07 p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #advancedProgram .advancedProgram07 .advancedProgramDetail07:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #advancedProgram .advancedImg {
-    width: 719px;
-    height: 503px;
+  width: 719px;
+  height: 503px;
 }
 
 #advancedProgram .advancedIcon img {
-    width: 103px;
-    height: 14px;
+  width: 103px;
+  height: 14px;
 }
 
-
 #activity .itTool {
-    background-color: #f7f7f7;
-    width: 100%;
-    height: 834px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 834px;
 }
 
 #activity .itTool h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .itTool h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .itTool .itToolFlex {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .itToolDetails {
-    width: 285px;
-    height: 503px;
-    position: relative;
+  width: 285px;
+  height: 503px;
+  position: relative;
 }
 
 #activity .itToolDetails h3 {
-    font-size: 22px;
-    line-height: 44px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 44px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .itToolDetails p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .itTool .itToolDetails .readMore {
-    position: absolute;
-    top: 93%;
-    margin-left: 15px;
+  position: absolute;
+  top: 93%;
+  margin-left: 15px;
 }
 
 #activity .itTool a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .itTool .itToolDetails p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 129%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 129%;
 }
 
 #activity .itToolFlex .itToolDetails:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .nkouEvent {
-    background-color: #ffffff;
-    width: 100%;
-    height: 833px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 833px;
 }
 
 #activity .nkouEvent h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .nkouEvent h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .nkouEvent .nkouEventFlex {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .nkouEventDetails {
-    width: 285px;
-    height: 364px;
-    position: relative;
+  width: 285px;
+  height: 364px;
+  position: relative;
 }
 
 #activity .nkouEventDetails h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .nkouEventDetails p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .nkouEvent .nkouEventDetails .readMore {
-    position: absolute;
-    top: 96%;
-    margin-left: 15px;
+  position: absolute;
+  top: 96%;
+  margin-left: 15px;
 }
 
 #activity .nkouEvent a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .nkouEvent .nkouEventDetails p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 119%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
 }
 
 #activity .nkouEventFlex .nkouEventDetails:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .startUp {
-    background-color: #f7f7f7;
-    width: 100%;
-    height: 810px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 810px;
 }
 
 #activity .startUp h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .startUp h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .startUp .startUpFlex {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .startUp .startUpDetails {
-    width: 285px;
-    height: 295px;
-    position: relative;
+  width: 285px;
+  height: 295px;
+  position: relative;
 }
 
 #activity .startUp .startUpDetails h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .startUp .startUpDetails p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .startUp .startUpDetails .readMore {
-    position: absolute;
-    top: 89%;
-    margin-left: 15px;
+  position: absolute;
+  top: 89%;
+  margin-left: 15px;
 }
 
 #activity .startUp a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .startUp .startUpDetails p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 119%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
 }
 
 #activity .startUpFlex .startUpDetails:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .club {
-    background-color: #ffffff;
-    width: 100%;
-    height: 810px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 810px;
 }
 
 #activity .club h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .club h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .club .clubFlex {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .club .clubDetails {
-    width: 285px;
-    height: 306px;
-    position: relative;
+  width: 285px;
+  height: 306px;
+  position: relative;
 }
 
 #activity .club .clubDetails h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .club .clubDetails p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .club .clubDetails .readMore {
-    position: absolute;
-    top: 88%;
-    margin-left: 15px;
+  position: absolute;
+  top: 88%;
+  margin-left: 15px;
 }
 
 #activity .club a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .club .clubDetails p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 119%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
 }
 
 #activity .clubFlex .clubDetails:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .course {
-    background-color: #f7f7f7;
-    width: 100%;
-    height: 1448px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 1448px;
 }
 
 #activity .course h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .course h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .course .course01 {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto 110px auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto 110px auto;
+  position: relative;
 }
 
 #activity .course .course01 .course01Details {
-    width: 285px;
-    height: 384px;
-    position: relative;
+  width: 285px;
+  height: 384px;
+  position: relative;
 }
 
 #activity .course01Details h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .course01Details p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .course .course01Details .readMore {
-    position: absolute;
-    top: 91%;
-    margin-left: 15px;
+  position: absolute;
+  top: 91%;
+  margin-left: 15px;
 }
 
 #activity .course a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .course .course01Details p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 119%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
 }
 
 #activity .course .course01Details:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .course .course02 {
-    display: flex;
-    justify-content: space-between;
-    width: 1040px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .course .course02 .course02Details {
-    width: 285px;
-    height: 479px;
-    position: relative;
+  width: 285px;
+  height: 479px;
+  position: relative;
 }
 
 #activity .course02Details h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .course02Details p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .course .course02Details .readMore {
-    position: absolute;
-    top: 96%;
-    margin-left: 15px;
+  position: absolute;
+  top: 96%;
+  margin-left: 15px;
 }
 
 #activity .course a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .course .course02Details p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 119%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
 }
 
 #activity .course .course02Details:hover {
-    filter: alpha(opacity=70);
-    -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
-    -moz-opacity: 0.7; /* FF , Netscape */
-    -khtml-opacity: 0.7; /* Safari 1.x */
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
+  -moz-opacity: 0.7; /* FF , Netscape */
+  -khtml-opacity: 0.7; /* Safari 1.x */
+  opacity: 0.7;
 }
 
 #activity .school {
-    background-color: #ffffff;
-    width: 100%;
-    height: 833px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 833px;
 }
 
 #activity .school h2 {
-    text-align: center;
-    font-size: 33px;
-    line-height: 59px;
-    padding: 70px 0 80px 0;
-    margin: 0;
-    font-weight: normal;
-    position: relative;
+  text-align: center;
+  font-size: 33px;
+  line-height: 59px;
+  padding: 70px 0 80px 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
 }
 
 #activity .school h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 70px;
-    display: inline-block;
-    width: 200px;
-    height: 1px;
-    transform: translateX(-50%);
-    background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #activity .school .schoolFlex {
-    display: flex;
-    justify-content: space-between;
-    width: 1060px;
-    height: 503px;
-    margin: 0 auto;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #activity .school .schoolDetails {
-    width: 285px;
-    height: 384px;
-    position: relative;
+  width: 285px;
+  height: 384px;
+  position: relative;
 }
 
 #activity .school .schoolDetails h3 {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
 }
 
 #activity .school .schoolDetails p {
-    font-size: 16px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: justify;
-    position: relative;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: normal;
+  text-align: justify;
+  position: relative;
 }
 
 #activity .school .schoolDetails .readMore {
-    position: absolute;
-    top: 88%;
-    margin-left: 15px;
+  position: absolute;
+  top: 88%;
+  margin-left: 15px;
 }
 
 #activity .school a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #activity .school .schoolDetails p:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 13px;
-    background: url("../images/icon_arrow01.png") no-repeat;
-    position: absolute;
-    top: 139%;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 139%;
 }
 
 #activity .schoolFlex .schoolDetails:hover {
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #activity .whatIsNkou {
-    width: 1060px;
-    margin: 100px auto;
+  width: 1060px;
+  margin: 100px auto;
 }
 
 #activity .whatIsNkou img {
-    width: 1060px;
-    height: 300px;
+  width: 1060px;
+  height: 300px;
 }
 
 /* 画像サイズ指定 */
 #activity .activityImg {
-    width: 719px;
-    height: 503px;
+  width: 719px;
+  height: 503px;
 }
 
 /* 画像ホバー時の装飾 */
-#activity a:hover{
-    opacity: 0.7;
+#activity a:hover {
+  opacity: 0.7;
 }
 
-
 #activity .aboutNkou {
-    background-color: #f7f7f7;
-    height: 450px;
-    margin-bottom: 82px;
+  background-color: #f7f7f7;
+  height: 450px;
+  margin-bottom: 82px;
 }
 
 #activity .aboutNkou .aboutNkouCenter {
-    width: 1040px;
-    height: 328px;
-    margin: 0 auto;
-    padding-top: 70px;
+  width: 1040px;
+  height: 328px;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
 #activity .aboutNkou .aboutNkouCenter .title {
-    font-size: 25px;
-    line-height: 45px;
-    width: 409px;
-    font-weight: normal;
+  font-size: 25px;
+  line-height: 45px;
+  width: 409px;
+  font-weight: normal;
 }
 
 #activity .aboutNkou .aboutNkou01 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
 }
 
 #activity .aboutNkou .aboutNkou01 ul:before {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/arrow_black.png");
-    background-size: contain;
-    width: 5px;
-    height:10px;
-    position: absolute;
-    top: 50%;
-    left: 95%;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_black.png");
+  background-size: contain;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 95%;
 }
 
 #activity .aboutNkou .aboutNkou01 ul {
-    width: 477px;
-    height: 133px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  width: 477px;
+  height: 133px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 #activity .aboutNkou .stripe01 {
-    background-image: url("../images/about_background.png");
-    width: 489px;
-    height: 145px;
+  background-image: url("../images/about_background.png");
+  width: 489px;
+  height: 145px;
 }
 
 #activity .aboutNkou .aboutNkou01 .aboutNkouUl01,
 #activity .aboutNkou .aboutNkou01 .aboutNkouUl02,
 #activity .aboutNkou .aboutNkou02 .aboutNkouUl03,
 #activity .aboutNkou .aboutNkou02 .aboutNkouUl04 {
-    margin: 6px 0 0 6px;
-    background-color: #ffffff;
-    padding-left: 30px;
+  margin: 6px 0 0 6px;
+  background-color: #ffffff;
+  padding-left: 30px;
 }
 
 #activity .aboutNkou .aboutNkou01 .aboutNkouUl01:hover,
 #activity .aboutNkou .aboutNkou01 .aboutNkouUl02:hover,
 #activity .aboutNkou .aboutNkou02 .aboutNkouUl03:hover,
 #activity .aboutNkou .aboutNkou02 .aboutNkouUl04:hover {
-    opacity: 0.8 ;
+  opacity: 0.8;
 }
 
 #activity .aboutNkou .aboutNkou01 ul li {
-    font-size: 13px;
-    line-height: 23px;
-    width: 409px;
+  font-size: 13px;
+  line-height: 23px;
+  width: 409px;
 }
 
 #activity .aboutNkou a {
-    text-decoration: none;
-    color: #272727;
+  text-decoration: none;
+  color: #272727;
 }
 
 #activity .aboutNkou .aboutNkou02 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #activity .aboutNkou .stripe02 {
-    background-image: url("../images/about_background.png");
-    width: 489px;
-    height: 123px;
+  background-image: url("../images/about_background.png");
+  width: 489px;
+  height: 123px;
 }
 
 #activity .aboutNkou .aboutNkou02 ul {
-    width: 477px;
-    height: 111px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  width: 477px;
+  height: 111px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 #activity .aboutNkou .aboutNkou02 ul:before {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/arrow_black.png");
-    background-size: contain;
-    width: 5px;
-    height:10px;
-    position: absolute;
-    top: 50%;
-    left: 95%;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_black.png");
+  background-size: contain;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 95%;
 }
 
 #activity .aboutNkou .aboutNkou02 ul li {
-    font-size: 13px;
-    line-height: 23px;
-    width: 409px;
+  font-size: 13px;
+  line-height: 23px;
+  width: 409px;
 }
 
 #detail {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 #detail .nkouDetail {
-    width: 100%;
-    height: 247px;
-    background-image: url("../images/detail_background.png");
+  width: 100%;
+  height: 247px;
+  background-image: url("../images/detail_background.png");
 }
 
 #detail h2 {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 40px;
-    margin: 0;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  margin: 0;
 }
 
 #detail .detailBtn {
-    width: 550px;
-    height: 134px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  width: 550px;
+  height: 134px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 #detail .detailBtn ul {
-    color: #ffffff;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
 }
 
 #detail .detailBtn ul li {
-    background-color: #ffffff;
-    color: #272727;
-    width: 258px;
-    height: 53px;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    padding: 14px 0;
-    position: relative;
+  background-color: #ffffff;
+  color: #272727;
+  width: 258px;
+  height: 53px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 14px 0;
+  position: relative;
 }
 
 #detail .detailBtn ul li:after {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/arrow_black.png");
-    background-size: contain;
-    width: 5px;
-    height:10px;
-    position: absolute;
-    top: 42%;
-    left: 93%;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_black.png");
+  background-size: contain;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  top: 42%;
+  left: 93%;
 }
 
-#detail .detailBtn ul  li a {
-    text-decoration: none;
-    display: block;
-    color: #272727;
+#detail .detailBtn ul li a {
+  text-decoration: none;
+  display: block;
+  color: #272727;
 }
 
 #detail .detailBtn .book {
-    margin-bottom: 20px;
-    position: relative;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 #detail .detailBtn .book:before {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/book_icon.png");
-    background-size: contain;
-    width: 29px;
-    height: 27px;
-    position: absolute;
-    top: 12px;
-    left: 20px;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/book_icon.png");
+  background-size: contain;
+  width: 29px;
+  height: 27px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
 }
 
 #detail .detailBtn .conversation {
-    position: relative;
+  position: relative;
 }
 
 #detail .detailBtn .conversation:before {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/conversation_icon.png");
-    background-size: contain;
-    width: 29px;
-    height: 27px;
-    position: absolute;
-    top: 12px;
-    left: 20px;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/conversation_icon.png");
+  background-size: contain;
+  width: 29px;
+  height: 27px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
 }
 
 #detail .detailBtn .detailTel {
-    width: 250px;
-    height: 120px;
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
+  width: 250px;
+  height: 120px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 #detail .detailBtn .detailTel img {
-    margin-top: 10px;
-    width: 250px;
-    height: 28px;
+  margin-top: 10px;
+  width: 250px;
+  height: 28px;
 }
 
 #detail .detailBtn .detailTel small {
-    color: #ffffff;
-    padding-left: 65px;
-    margin: 7px 0 24px 0;
+  color: #ffffff;
+  padding-left: 65px;
+  margin: 7px 0 24px 0;
 }
 
 #detail .detailBtn .detailTel .contact {
-    color: #ffffff;
-    width: 212px;
-    height: 40px;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center;
-    border: solid 1px #ffffff;
-    padding: 10px 0;
-    margin-left: 40px;
-    text-decoration: none;
+  color: #ffffff;
+  width: 212px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  border: solid 1px #ffffff;
+  padding: 10px 0;
+  margin-left: 40px;
+  text-decoration: none;
 }
-
 
 /* ホバーの装飾 */
 #detail .nkouDetail .detailBtn ul li:hover {
-    opacity: 0.7;
-    transition: all 0.3s ease;
+  opacity: 0.7;
+  transition: all 0.3s ease;
 }
 
 #detail .detailBtn img:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 #detail .nkouDetail .detailBtn .detailTel .contact:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #detail .nkouDetail02 div {
-    padding: 0;
-    width: 550px;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 40px auto 0 auto;
+  padding: 0;
+  width: 550px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 40px auto 0 auto;
 }
 
 #detail .nkouDetail02 div p {
-    border: solid 1px #272727;
-    width: 256px;
-    height: 42px;
-    margin: 0;
-    padding-top: 12px;
-    padding-left: 90px;
-    color: #272727;
-    font-size: 14px;
-    position: relative;
+  border: solid 1px #272727;
+  width: 256px;
+  height: 42px;
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 90px;
+  color: #272727;
+  font-size: 14px;
+  position: relative;
 }
 
 #detail .nkouDetail02 div p:before {
-    content: "";
-    display: inline-block;
-    background-image: url("../images/arrow_black.png");
-    background-size: contain;
-    width: 5px;
-    height:10px;
-    position: absolute;
-    top: 42%;
-    left: 93%;
+  content: "";
+  display: inline-block;
+  background-image: url("../images/arrow_black.png");
+  background-size: contain;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  top: 42%;
+  left: 93%;
 }
 
 #detail .nkouDetail02 div a {
-    width: 256px;
-    height: 42px;
-    text-decoration: none;
-    display: block;
-    color: #272727;
+  width: 256px;
+  height: 42px;
+  text-decoration: none;
+  display: block;
+  color: #272727;
 }
 
 /* ホバー時の装飾 */
 #detail .nkouDetail02 div p:hover {
-    background-color: #000000;
-    color: #ffffff;
-    transition: all 0.3s ease;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 #detail .nkouDetail02 div a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #detail .nkouDetail02 div p:hover::before {
-    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+    brightness(107%);
 }
 
 #detail .otherSchools {
-    width: 1040px;
-    margin: 0 auto;
-    border-top: solid 1px #e1e1e1;
+  width: 1040px;
+  margin: 0 auto;
+  border-top: solid 1px #e1e1e1;
 }
 
 #detail .otherSchools h3 {
-    text-align: center;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    margin: 40px 0 30px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  margin: 40px 0 30px 0;
 }
 
 #detail .otherSchools .schoolSeparate {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #detail .otherSchools .stripe {
-    width: 488px;
-    height: 110px;
-    background-image: url("../images/about_background.png");
+  width: 488px;
+  height: 110px;
+  background-image: url("../images/about_background.png");
 }
 
 #detail .otherSchools .stripe a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #detail .otherSchools .stripe .school01 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffffff;
-    margin: 6px 0 0 6px;
-    width: 476px;
-    height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 6px 0 0 6px;
+  width: 476px;
+  height: 98px;
 }
 
 #detail .otherSchools .stripe .school01 img {
-    width: 134px;
-    height: 35px;
+  width: 134px;
+  height: 35px;
 }
 
 #detail .otherSchools .stripe img {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #detail .otherSchools .stripe .school02 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffffff;
-    margin: 6px 0 0 6px;
-    width: 476px;
-    height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 6px 0 0 6px;
+  width: 476px;
+  height: 98px;
 }
 
 #detail .otherSchools .stripe .school02 img {
-    width: 172px;
-    height: 45px;
+  width: 172px;
+  height: 45px;
 }
 
 #detail .otherSchools .schoolSeparate p {
-    font-size: 13px;
-    line-height: 18px;
-    margin: 0 auto;
-    padding-top: 10px;
-    color: #272727;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 auto;
+  padding-top: 10px;
+  color: #272727;
 }
-
 
 /* ホバー時の装飾 */
 #detail .otherSchools .stripe .school01:hover,
 #detail .otherSchools .stripe .school02:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* 後半のナビゲーション */
 footer {
-    width: 100%;
-    height: 1021px;
-    margin: 0 auto;
-    padding-top: 40px;
-    background-color: #f8f8f8;
+  width: 100%;
+  height: 1021px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-color: #f8f8f8;
 }
 
 footer .footerCenter {
-    width: 1060px;
-    margin: 0 auto;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 footer .footerTop {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 footer .footerTop ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 footer .footerTop ul li {
-    font-size: 16px;
-    font-weight: 700;
-    width: auto;
-    color: #040066;
-    border-right: solid 1px #989CBA;
-    padding-right: 10px;
-    margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  width: auto;
+  color: #040066;
+  border-right: solid 1px #989cba;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 footer .footerTop .pageTopBtn {
-    position: absolute;
-    right: 8%;
+  position: absolute;
+  right: 8%;
 }
 
 footer .footerTop ul li:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 footer .footerTop img {
-    margin-top: -8px;
+  margin-top: -8px;
 }
 
 footer .footerTop a {
-    color: #040066;
+  color: #040066;
 }
 
 footer .footerTopList {
-    display: flex;
+  display: flex;
 }
 
 footer .footerTopList .footerListTitle {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 footer .footerTopList .footerTopList01 .adprSmall {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 footer .footerTopList ul {
-    margin-right: 20px;
-    padding: 0;
+  margin-right: 20px;
+  padding: 0;
 }
 
 footer .footerTopList02,
 footer .footerTopList03,
 footer .footerTopList04,
 footer .footerTopList05 {
-    margin-top: 23px;
+  margin-top: 23px;
 }
 
 footer ul li {
-    font-size: 14px;
-    line-height: 20px;
-    width: 191px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+  width: 191px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  list-style: none;
 }
 
 footer .footerTopList .borderBottom {
-    border-bottom: solid 1px #cccccc;
-    padding-bottom: 8px;
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 8px;
 }
 
 footer .footerTopList .navy {
-    color: #040066;
+  color: #040066;
 }
 
 footer a {
-    text-decoration: none;
-    color: #272727;
+  text-decoration: none;
+  color: #272727;
 }
 
 /* ホバーの装飾 */
 footer li:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer .snsNav {
-    display: flex;
-    justify-content: space-between;
-    border-top: solid 1px #cccccc;
-    padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #cccccc;
+  padding-top: 20px;
 }
 
 footer .snsNav .overView ul {
-    width: 312px;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
+  width: 312px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 footer .snsNav .overView ul li {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 footer .snsNav .snsBtn {
-    display: flex;
+  display: flex;
 }
 
 footer .snsBtn .twitter {
-    width: 155px;
-    height: 48px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    border-right: solid 1px #cccccc;
+  width: 155px;
+  height: 48px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-right: solid 1px #cccccc;
 }
 
 footer .snsBtn .twitter:hover {
-    background-color: #e4e2e2;
+  background-color: #e4e2e2;
 }
 
 footer .snsBtn .facebook {
-    width: 155px;
-    height: 48px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    border-right: solid 1px #cccccc;
+  width: 155px;
+  height: 48px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-right: solid 1px #cccccc;
 }
 
 footer .snsBtn .facebook:hover {
-    background-color: #e4e2e2;
+  background-color: #e4e2e2;
 }
 
 footer .snsBtn .youtube {
-    width: 155px;
-    height: 48px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
+  width: 155px;
+  height: 48px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 footer .snsBtn .youtube:hover {
-    background-color: #e4e2e2;
+  background-color: #e4e2e2;
 }
 
 footer .snsBtn p {
-    margin: 0;
-    font-size: 12px;
+  margin: 0;
+  font-size: 12px;
 }
 
 footer .snsBtn img {
-    width: 29px;
-    height: 27px;
-    padding-right: 5px;
+  width: 29px;
+  height: 27px;
+  padding-right: 5px;
 }
 
 footer .footerBottom {
-    background-color: #1b1b1b;
-    height: 49px;
-    width: 100%;
+  background-color: #1b1b1b;
+  height: 49px;
+  width: 100%;
 }
 
 footer .footerBottom .footerNav {
-    width: 1060px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 footer .footerNav small {
-    font-size: 11px;
-    line-height: 15px;
-    color: #999999;
-    position: relative;
+  font-size: 11px;
+  line-height: 15px;
+  color: #999999;
+  position: relative;
 }
 
 footer .footerNav span {
-    font-size: 20px;
-    position: absolute;
-    left: -15px;
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
 }
 
 footer .footerNav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ホバーの装飾 */
 footer .footerNav a:hover {
-    text-decoration: underline;
-    color: #999999;
+  text-decoration: underline;
+  color: #999999;
 }
