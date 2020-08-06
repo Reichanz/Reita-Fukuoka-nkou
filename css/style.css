@@ -2,16 +2,17 @@
   box-sizing: border-box;
 }
 
+
 .fix-header {
   background-color: #ffffff;
   position: fixed;
-  top: 0;
+  top: -66px;
   left: 0;
   width: 100%;
   z-index: 100;
 }
 
-.side {
+.scrolled {
   width: 1060px;
   height: 60px;
   margin: 0 auto;
@@ -27,23 +28,23 @@
 
 .telTime {
   display: flex;
-  flex-direction: column;
   margin-left: auto;
 }
 
 .telImg {
   width: 190px;
   height: 21px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .time {
   font-size: 10px;
   margin: 0;
-  text-align: center;
+  align-self: center;
 }
 
-.side p {
+.scrolled p {
   width: 170px;
   height: 40px;
   text-align: center;
@@ -56,7 +57,7 @@
   position: relative;
 }
 
-.side p:after {
+.scrolled p:after {
   content: "";
   display: inline-block;
   width: 7px;
@@ -67,17 +68,16 @@
   right: 3px;
 }
 
-.side p:hover {
+.scrolled p:hover {
   color: #ffffff;
   background-color: #040066;
 }
 
-.side p:hover:after {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
-    brightness(107%);
+.scrolled p:hover:after {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
 }
 
-.side a {
+.scrolled a {
   text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ header .loginBtn:before {
   margin: 0 5px 0 4px;
 }
 
-#mv .headerLogo {
+#mainVisual .headerLogo {
   width: 1040px;
   height: 93px;
   margin: 0 auto;
@@ -166,20 +166,20 @@ header .loginBtn:before {
   align-items: center;
 }
 
-#mv .tell {
+#mainVisual .tell {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: 33px;
 }
 
-#mv .tell small {
+#mainVisual .tell small {
   color: #919aa0;
   text-align: center;
   padding-top: 5px;
 }
 
-#mv .mainNav {
+#mainVisual .mainNav {
   display: flex;
   width: 1040px;
   height: 60px;
@@ -187,12 +187,12 @@ header .loginBtn:before {
   padding: 0;
 }
 
-#mv .mainNav a {
+#mainVisual .mainNav a {
   text-decoration: none;
   color: inherit;
 }
 
-#mv .mainNav01 {
+#mainVisual .mainNav01 {
   height: 31px;
   list-style: none;
   display: flex;
@@ -200,70 +200,83 @@ header .loginBtn:before {
   margin-top: 4px;
 }
 
-#mv .mainNav01 li {
+#mainVisual .mainNav01 li {
   font-size: 15px;
+  width: 159px;
   border-left: solid 1px #dcdddd;
-  padding: 0 30px;
   text-align: center;
+  line-height: 16px;
+  letter-spacing: 3px;
 }
 
-#mv .mainNav01 .aboutNkou {
+#mainVisual .mainNav01 .aboutSchool {
+  color: #20296f;
+  position: relative;
+}
+
+#mainVisual .mainNav01 .aboutSchool span {
+  font-size: 13px;
+  font-family: monospace;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+#mainVisual .mainNav .aboutSchool:before {
+  content: "";
+  top: 46px;
+  left: 70px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #191836;
+  position: absolute;
+}
+
+#mainVisual .mainNav01 .netCourse span {
+  border-right: solid 1px #dcdddd;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0;
+  border-right: none;
+  font-weight: 600;
+  color: #9EA5AA;
+}
+
+#mainVisual .mainNav01 .netCourse:hover,
+#mainVisual .mainNav01 .netCourse:hover span {
   color: #20296f;
 }
 
-#mv .mainNav01 .allianceNkou {
+#mainVisual .mainNav01 .commuteCourse span {
   border-right: solid 1px #dcdddd;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0;
+  border-right: none;
+  font-weight: 600;
+  color: #9EA5AA;
 }
 
-#mv .mainNav01 .aboutNkou:after {
-  content: "";
-  display: list-item;
-  width: 76px;
-  height: 10px;
-  background-image: url("../images/global_nav_btn_01.png");
-  margin: 0 auto;
+#mainVisual .mainNav01 .commuteCourse:hover,
+#mainVisual .mainNav01 .commuteCourse:hover span {
+  color: #20296f;
 }
 
-#mv .mainNav01 .courseNkou:after {
-  content: "";
-  display: list-item;
-  width: 62px;
-  height: 10px;
-  background-image: url("../images/global_nav_btn_02.png");
-  margin: 0 auto;
+#mainVisual .mainNav01 .allianceSchool span {
+  border-right: solid 1px #dcdddd;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0;
+  border-right: none;
+  font-weight: 600;
+  color: #9EA5AA;
 }
 
-#mv .mainNav01 .courseNkou:hover:after {
-  filter: invert(100%);
+#mainVisual .mainNav01 .allianceSchool:hover,
+#mainVisual .mainNav01 .allianceSchool:hover span {
+  color: #20296f;
 }
 
-#mv .mainNav01 .commuteNkou:after {
-  content: "";
-  display: list-item;
-  width: 96px;
-  height: 10px;
-  background-image: url("../images/global_nav_btn_03.png");
-  margin: 0 auto;
-}
-
-#mv .mainNav01 .commuteNkou:hover:after {
-  filter: invert(100%);
-}
-
-#mv .mainNav01 .allianceNkou:after {
-  content: "";
-  display: list-item;
-  width: 90px;
-  height: 10px;
-  background-image: url("../images/global_nav_btn_04.png");
-  margin: 0 auto;
-}
-
-#mv .mainNav01 .allianceNkou:hover:after {
-  filter: invert(100%);
-}
-
-#mv .mainNav02 {
+#mainVisual .mainNav02 {
   list-style: none;
   display: flex;
   margin-left: auto;
@@ -271,7 +284,7 @@ header .loginBtn:before {
   text-align: center;
 }
 
-#mv .mainNav02 li {
+#mainVisual .mainNav02 li {
   width: 170px;
   height: 40px;
   border: solid 1px #272727;
@@ -279,7 +292,7 @@ header .loginBtn:before {
   position: relative;
 }
 
-#mv .mainNav02 li:after {
+#mainVisual .mainNav02 li:after {
   content: "";
   display: inline-block;
   width: 7px;
@@ -290,41 +303,29 @@ header .loginBtn:before {
   right: 3px;
 }
 
-#mv .mainNav02 a {
+#mainVisual .mainNav02 a {
   display: block;
   padding: 10px 0;
 }
 
 /* ホバー時の装飾 */
-#mv .mainNav02 li:hover:after {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
-    brightness(107%);
+#mainVisual .mainNav02 li:hover:after {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
 }
 
-#mv .mainNav02 a:hover {
+#mainVisual .mainNav02 a:hover {
   background-color: #20296f;
   transition: all 0.3s ease;
   color: #ffffff;
 }
 
-#mv .aboutNavList {
+#mainVisual .aboutNavList {
   width: 100%;
   background-color: #191836;
   position: relative;
 }
 
-#mv .triangle {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #191836;
-  position: absolute;
-  top: -10px;
-  left: 18%;
-}
-
-#mv .aboutNavList ul {
+#mainVisual .aboutNavList ul {
   width: 1060px;
   height: 88px;
   margin: 0 auto;
@@ -338,7 +339,7 @@ header .loginBtn:before {
   list-style: none;
 }
 
-#mv .aboutNavList ul li {
+#mainVisual .aboutNavList ul li {
   font-size: 14px;
   height: 33px;
   padding: 7px;
@@ -346,13 +347,13 @@ header .loginBtn:before {
   display: inline-block;
 }
 
-#mv .aboutNavList ul li a {
+#mainVisual .aboutNavList ul li a {
   color: #ffffff;
   text-decoration: none;
   padding: 6px;
 }
 
-#mv .aboutNavList ul li::before {
+#mainVisual .aboutNavList ul li::before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -364,42 +365,42 @@ header .loginBtn:before {
 }
 
 /* 擬似要素の打ち消し */
-#mv .aboutNavList .qualification:before {
+#mainVisual .aboutNavList .qualification:before {
   content: none;
 }
 
 /* ホバー時の装飾 */
-#mv .aboutNavList ul li a:hover {
+#mainVisual .aboutNavList ul li a:hover {
   color: #191836;
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
 
-#mv .mainVisual {
+#mainVisual .mainVisual {
   position: relative;
 }
 
-#mv .mainVisual img {
+#mainVisual .mainVisual img {
   width: 100%;
   height: 530px;
   object-fit: cover;
 }
 
-#mv h1 {
+#mainVisual h1 {
   font-size: 52px;
   font-weight: 400;
   position: absolute;
-  top: 18%;
+  top: 24%;
   left: 50%;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
-  letter-spacing: 13px;
+  letter-spacing: 16px;
 }
 
-#mv .mainVisual h1:before {
+#mainVisual .mainVisual h1:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -411,7 +412,7 @@ header .loginBtn:before {
   background-color: #ffffff;
 }
 
-#mv .mainVisual h1:after {
+#mainVisual .mainVisual h1:after {
   content: "";
   display: list-item;
   width: 93px;
@@ -423,12 +424,12 @@ header .loginBtn:before {
 }
 
 /* 画像サイズ指定 */
-#mv .headerLogo .nkouLogoImg {
+#mainVisual .headerLogo .nkouLogoImg {
   width: 211px;
   height: 45px;
 }
 
-#mv .headerLogo .tell img {
+#mainVisual .headerLogo .tell img {
   width: 210px;
   height: 28px;
 }
@@ -449,6 +450,7 @@ header .loginBtn:before {
   line-height: 25px;
   list-style: none;
 }
+
 .topicPath ul li {
   display: inline-block;
   letter-spacing: 0.5px;
@@ -525,6 +527,20 @@ header .loginBtn:before {
 
 #policy h2 {
   border-bottom: solid 1px #272727;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#policy h2:before {
+  content: "";
+  position: absolute;
+  left: 135px;
+  bottom: 0px;
+  display: inline-block;
+  width: 270px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #policy .policyTag {
@@ -548,7 +564,7 @@ header .loginBtn:before {
   font-size: 19px;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 #policy .policyTag ul span {
@@ -565,6 +581,7 @@ header .loginBtn:before {
   height: 327px;
   display: flex;
   background-color: #f7f7f7;
+  border: solid 1px #dddddd;
 }
 
 #policy .nstandsBtn .standardImg {
@@ -642,7 +659,20 @@ header .loginBtn:before {
 
 #charm h2 {
   border-bottom: solid 1px #272727;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#charm h2:before {
+  content: "";
+  position: absolute;
+  left: 135px;
+  bottom: 0px;
+  display: inline-block;
+  width: 270px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 #charm .charmTag01 {
@@ -661,7 +691,7 @@ header .loginBtn:before {
   height: 320px;
 }
 
-#charm .charmDetail01 h3 {
+#charm h3 {
   font-size: 25px;
   line-height: 45px;
   font-weight: normal;
@@ -672,7 +702,7 @@ header .loginBtn:before {
   margin-top: 0;
 }
 
-#charm .charmDetail01 p {
+#charm p {
   margin-top: 0;
   line-height: 29px;
   letter-spacing: 0.5px;
@@ -693,23 +723,6 @@ header .loginBtn:before {
 #charm .charmTag02 .charmDetail02 {
   width: 489px;
   height: 230px;
-}
-
-#charm .charmTag02 h3 {
-  font-size: 25px;
-  line-height: 45px;
-  font-weight: normal;
-  color: #272727;
-  border-bottom: solid 1px #272727;
-  padding-bottom: 25px;
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-
-#charm .charmTag02 p {
-  margin-top: 0;
-  line-height: 29px;
-  letter-spacing: 0.5px;
 }
 
 /* 高卒資格取得のためのBasic Program */
@@ -750,18 +763,25 @@ header .loginBtn:before {
   font-size: 16px;
   line-height: 29px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
-#basicProgram .basicProgram01 {
+#basicProgram .basicProgram1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px;
+  padding-bottom: 100px;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 {
+#basicProgram .basicProgram1 .basicProgramDetail1 {
   width: 285px;
-  height: 450px;
+  height: 480px;
   position: relative;
+}
+
+#basicProgram .basicProgram1 .basicProgramDetail1:hover {
+  filter: alpha(opacity=70);
+  opacity: 0.7;
 }
 
 #basicProgram .basicIcon {
@@ -776,13 +796,17 @@ header .loginBtn:before {
   height: 14px;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 h3 {
+#basicProgram h3 {
   font-size: 22px;
   line-height: 40px;
   font-weight: 400;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 p {
+#basicProgram h3 span {
+  font-size: 13px;
+}
+
+#basicProgram p {
   font-size: 16px;
   line-height: 29px;
   font-weight: normal;
@@ -791,27 +815,19 @@ header .loginBtn:before {
   position: relative;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 small {
+#basicProgram small {
   font-size: 11px;
   line-height: 20px;
   display: inline-block;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 .readMore {
+#basicProgram .readMore {
   position: absolute;
   top: 92%;
   margin-left: 15px;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#basicProgram .basicProgram01 .basicProgramDetail01 small:before {
+#basicProgram small:before {
   content: "";
   display: inline-block;
   width: 7px;
@@ -821,66 +837,12 @@ header .loginBtn:before {
   top: 92%;
 }
 
-#basicProgram .basicProgram01 .basicProgramDetail01:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#basicProgram .basicProgram02 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 115px;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 {
-  width: 285px;
-  height: 450px;
-  position: relative;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 small {
-  font-size: 11px;
-  line-height: 20px;
-  display: inline-block;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 .readMore {
-  position: absolute;
-  top: 92%;
-  margin-left: 15px;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 a {
+#basicProgram a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-#basicProgram .basicProgram02 .basicProgramDetail02 small:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 92%;
 }
 
 #basicProgram .basicImg {
@@ -888,11 +850,8 @@ header .loginBtn:before {
   height: 503px;
 }
 
-#basicProgram .basicProgram02 .basicProgramDetail02:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
 
+/* advanced program */
 #advancedProgram {
   width: 1060px;
   margin: 0 auto;
@@ -921,18 +880,14 @@ header .loginBtn:before {
   background-color: black;
 }
 
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 {
-  width: 285px;
-  height: 524px;
-}
-
-#advancedProgram .advancedProgram01 .advancedIcon {
+#advancedProgram .advancedIcon {
   width: 123px;
   height: 25px;
   background-color: #272727;
+  padding: 5px 0 0 10px;
 }
 
-#advancedProgram .advancedProgram01 .advancedIcon img {
+#advancedProgram .advancedIcon img {
   width: 103px;
   height: 14px;
 }
@@ -941,34 +896,24 @@ header .loginBtn:before {
   font-size: 16px;
   line-height: 29px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
-#advancedProgram .advancedProgram01 {
+
+/* advanced profram各項目 */
+#advancedProgram .advancedPrograms {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px;
 }
 
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 {
-  width: 285px;
-  height: 524px;
-  position: relative;
-}
-
-#advancedProgram .advancedIcon {
-  width: 99px;
-  height: 25px;
-  padding: 5px 0 0 10px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 h3 {
+#advancedProgram h3 {
   font-size: 22px;
   line-height: 40px;
   font-weight: 400;
 }
 
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 p {
+#advancedProgram p {
   font-size: 16px;
   line-height: 29px;
   font-weight: normal;
@@ -977,442 +922,95 @@ header .loginBtn:before {
   position: relative;
 }
 
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 .readMore {
-  position: absolute;
-  top: 98%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram01 .advancedProgramDetail01 p:before {
+#advancedProgram .advancedPrograms .lessonParag:before {
   content: "";
   display: inline-block;
   width: 7px;
   height: 13px;
   background: url("../images/icon_arrow01.png") no-repeat;
   position: absolute;
-  top: 109%;
+  top: 114%;
 }
 
-#advancedProgram .advancedProgram01 .advancedProgramDetail01:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
+#advancedProgram .advancedPrograms .tutor:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 92%;
 }
 
-#advancedProgram .advancedProgram02 {
+#advancedProgram .advancedPrograms .programLessonParag:before,
+#advancedProgram .advancedPrograms .cookingParag:before,
+#advancedProgram .advancedPrograms .agricultureParag:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 124%;
+}
+
+#advancedProgram .advancedPrograms .internationalParag:before,
+#advancedProgram .advancedPrograms .reviewParag:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 130%;
+}
+
+#advancedProgram .readMore {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+#advancedProgram a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#advancedProgram .advancedPrograms {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px;
 }
 
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 {
+#advancedProgram .lesson {
   width: 285px;
-  height: 503px;
+  height: 535px;
 }
 
-#advancedProgram .advancedProgram02 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 {
+#advancedProgram .tutor {
   width: 285px;
   height: 400px;
   position: relative;
 }
 
-#advancedProgram .advancedIcon {
-  width: 99px;
-  height: 25px;
-  padding: 5px 0 0 10px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 .readMore {
-  position: absolute;
-  top: 94%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram02 .advancedProgramDetail02:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#advancedProgram .advancedProgram03 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 {
+#advancedProgram .programLesson,
+#advancedProgram .cooking,
+#advancedProgram .agriculture {
   width: 285px;
-  height: 503px;
+  height: 440px;
 }
 
-#advancedProgram .advancedProgram03 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 {
+#advancedProgram .internationalEdu {
   width: 285px;
-  height: 400px;
-  position: relative;
+  height: 330px;
 }
 
-#advancedProgram .advancedIcon {
-  width: 99px;
-  height: 25px;
-  padding: 5px 0 0 10px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 .readMore {
-  position: absolute;
-  top: 94%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram03 .advancedProgramDetail03:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#advancedProgram .advancedProgram04 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
-}
-
-#advancedProgram .advancedProgram04 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 {
+#advancedProgram .review {
   width: 285px;
-  height: 430px;
-  position: relative;
+  height: 351px;
 }
 
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 .readMore {
-  position: absolute;
-  top: 97%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram04 .advancedProgramDetail04:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#advancedProgram .advancedProgram05 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 {
-  width: 285px;
-  height: 503px;
-}
-
-#advancedProgram .advancedProgram05 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 {
-  width: 285px;
-  height: 400px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 .readMore {
-  position: absolute;
-  top: 94%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram05 .advancedProgramDetail05:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#advancedProgram .advancedProgram06 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 {
-  width: 285px;
-  height: 503px;
-}
-
-#advancedProgram .advancedProgram06 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 {
-  width: 285px;
-  height: 400px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 .readMore {
-  position: absolute;
-  top: 75%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram06 .advancedProgramDetail06:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#advancedProgram .advancedProgram07 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 110px;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 {
-  width: 285px;
-  height: 503px;
-}
-
-#advancedProgram .advancedProgram07 .advancedIcon {
-  width: 123px;
-  height: 25px;
-  background-color: #272727;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 {
-  width: 285px;
-  height: 365px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 h3 {
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  letter-spacing: 0.2px;
-  position: relative;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 .readMore {
-  position: absolute;
-  top: 93%;
-  margin-left: 15px;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07 p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#advancedProgram .advancedProgram07 .advancedProgramDetail07:hover {
+/* ホバーの設定 */
+#advancedProgram .advancedPrograms a:hover {
   filter: alpha(opacity=70);
   opacity: 0.7;
 }
@@ -1422,183 +1020,16 @@ header .loginBtn:before {
   height: 503px;
 }
 
-#advancedProgram .advancedIcon img {
-  width: 103px;
-  height: 14px;
-}
-
 #activity .itTool {
   background-color: #f7f7f7;
   width: 100%;
   height: 834px;
 }
 
-#activity .itTool h2 {
-  text-align: center;
-  font-size: 33px;
-  line-height: 59px;
-  padding: 70px 0 80px 0;
-  margin: 0;
-  font-weight: normal;
-  position: relative;
-}
-
-#activity .itTool h2:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 70px;
-  display: inline-block;
-  width: 200px;
-  height: 1px;
-  transform: translateX(-50%);
-  background-color: black;
-}
-
-#activity .itTool .itToolFlex {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  height: 503px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#activity .itToolDetails {
-  width: 285px;
-  height: 503px;
-  position: relative;
-}
-
-#activity .itToolDetails h3 {
-  font-size: 22px;
-  line-height: 44px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .itToolDetails p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .itTool .itToolDetails .readMore {
-  position: absolute;
-  top: 93%;
-  margin-left: 15px;
-}
-
-#activity .itTool a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#activity .itTool .itToolDetails p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 129%;
-}
-
-#activity .itToolFlex .itToolDetails:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#activity .nkouEvent {
+#activity .event {
   background-color: #ffffff;
   width: 100%;
-  height: 833px;
-}
-
-#activity .nkouEvent h2 {
-  text-align: center;
-  font-size: 33px;
-  line-height: 59px;
-  padding: 70px 0 80px 0;
-  margin: 0;
-  font-weight: normal;
-  position: relative;
-}
-
-#activity .nkouEvent h2:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 70px;
-  display: inline-block;
-  width: 200px;
-  height: 1px;
-  transform: translateX(-50%);
-  background-color: black;
-}
-
-#activity .nkouEvent .nkouEventFlex {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  height: 503px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#activity .nkouEventDetails {
-  width: 285px;
-  height: 364px;
-  position: relative;
-}
-
-#activity .nkouEventDetails h3 {
-  font-size: 22px;
-  line-height: 40px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .nkouEventDetails p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .nkouEvent .nkouEventDetails .readMore {
-  position: absolute;
-  top: 96%;
-  margin-left: 15px;
-}
-
-#activity .nkouEvent a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#activity .nkouEvent .nkouEventDetails p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 119%;
-}
-
-#activity .nkouEventFlex .nkouEventDetails:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
+  height: 834px;
 }
 
 #activity .startUp {
@@ -1607,180 +1038,23 @@ header .loginBtn:before {
   height: 810px;
 }
 
-#activity .startUp h2 {
-  text-align: center;
-  font-size: 33px;
-  line-height: 59px;
-  padding: 70px 0 80px 0;
-  margin: 0;
-  font-weight: normal;
-  position: relative;
-}
-
-#activity .startUp h2:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 70px;
-  display: inline-block;
-  width: 200px;
-  height: 1px;
-  transform: translateX(-50%);
-  background-color: black;
-}
-
-#activity .startUp .startUpFlex {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  height: 503px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#activity .startUp .startUpDetails {
-  width: 285px;
-  height: 295px;
-  position: relative;
-}
-
-#activity .startUp .startUpDetails h3 {
-  font-size: 22px;
-  line-height: 40px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .startUp .startUpDetails p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .startUp .startUpDetails .readMore {
-  position: absolute;
-  top: 89%;
-  margin-left: 15px;
-}
-
-#activity .startUp a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#activity .startUp .startUpDetails p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 119%;
-}
-
-#activity .startUpFlex .startUpDetails:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
 #activity .club {
   background-color: #ffffff;
   width: 100%;
   height: 810px;
 }
 
-#activity .club h2 {
-  text-align: center;
-  font-size: 33px;
-  line-height: 59px;
-  padding: 70px 0 80px 0;
-  margin: 0;
-  font-weight: normal;
-  position: relative;
-}
-
-#activity .club h2:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 70px;
-  display: inline-block;
-  width: 200px;
-  height: 1px;
-  transform: translateX(-50%);
-  background-color: black;
-}
-
-#activity .club .clubFlex {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  height: 503px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#activity .club .clubDetails {
-  width: 285px;
-  height: 306px;
-  position: relative;
-}
-
-#activity .club .clubDetails h3 {
-  font-size: 22px;
-  line-height: 40px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .club .clubDetails p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .club .clubDetails .readMore {
-  position: absolute;
-  top: 88%;
-  margin-left: 15px;
-}
-
-#activity .club a {
-  position: absolute;
-  top: 0;
-  left: 0;
+#activity .school {
+  background-color: #ffffff;
   width: 100%;
-  height: 100%;
+  height: 833px;
 }
 
-#activity .club .clubDetails p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 119%;
-}
-
-#activity .clubFlex .clubDetails:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#activity .course {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 1448px;
-}
-
+#activity .itTool h2,
+#activity .event h2,
+#activity .startUp h2,
+#activity .club h2,
+#activity .school h2,
 #activity .course h2 {
   text-align: center;
   font-size: 33px;
@@ -1791,6 +1065,11 @@ header .loginBtn:before {
   position: relative;
 }
 
+#activity .itTool h2:after,
+#activity .event h2:after,
+#activity .startUp h2:after,
+#activity .club h2:after,
+#activity .school h2:after,
 #activity .course h2:after {
   content: "";
   position: absolute;
@@ -1803,155 +1082,9 @@ header .loginBtn:before {
   background-color: black;
 }
 
-#activity .course .course01 {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  height: 503px;
-  margin: 0 auto 110px auto;
-  position: relative;
-}
-
-#activity .course .course01 .course01Details {
-  width: 285px;
-  height: 384px;
-  position: relative;
-}
-
-#activity .course01Details h3 {
-  font-size: 22px;
-  line-height: 40px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .course01Details p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .course .course01Details .readMore {
-  position: absolute;
-  top: 91%;
-  margin-left: 15px;
-}
-
-#activity .course a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#activity .course .course01Details p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 119%;
-}
-
-#activity .course .course01Details:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-
-#activity .course .course02 {
-  display: flex;
-  justify-content: space-between;
-  width: 1040px;
-  height: 503px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#activity .course .course02 .course02Details {
-  width: 285px;
-  height: 479px;
-  position: relative;
-}
-
-#activity .course02Details h3 {
-  font-size: 22px;
-  line-height: 40px;
-  margin: 0;
-  font-weight: normal;
-}
-
-#activity .course02Details p {
-  font-size: 16px;
-  line-height: 29px;
-  font-weight: normal;
-  text-align: justify;
-  position: relative;
-}
-
-#activity .course .course02Details .readMore {
-  position: absolute;
-  top: 96%;
-  margin-left: 15px;
-}
-
-#activity .course a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#activity .course .course02Details p:before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 13px;
-  background: url("../images/icon_arrow01.png") no-repeat;
-  position: absolute;
-  top: 119%;
-}
-
-#activity .course .course02Details:hover {
-  filter: alpha(opacity=70);
-  -ms-filter: "alpha(opacity=70)"; /* IE 8,9 */
-  -moz-opacity: 0.7; /* FF , Netscape */
-  -khtml-opacity: 0.7; /* Safari 1.x */
-  opacity: 0.7;
-}
-
-#activity .school {
-  background-color: #ffffff;
-  width: 100%;
-  height: 833px;
-}
-
-#activity .school h2 {
-  text-align: center;
-  font-size: 33px;
-  line-height: 59px;
-  padding: 70px 0 80px 0;
-  margin: 0;
-  font-weight: normal;
-  position: relative;
-}
-
-#activity .school h2:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 70px;
-  display: inline-block;
-  width: 200px;
-  height: 1px;
-  transform: translateX(-50%);
-  background-color: black;
-}
-
+#activity .itTool .itToolFlex,
+#activity .event .eventFlex,
+#activity .club .clubFlex,
 #activity .school .schoolFlex {
   display: flex;
   justify-content: space-between;
@@ -1961,20 +1094,69 @@ header .loginBtn:before {
   position: relative;
 }
 
+#activity .startUp .startUpFlex {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#activity .course .courses {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 503px;
+  margin: 0 auto 110px auto;
+  position: relative;
+}
+
+
+#activity .startUpImg {
+  width: 720px;
+  height: 480px;
+}
+
+
+#activity .itToolDetails {
+  width: 285px;
+  height: 450px;
+  position: relative;
+}
+
+#activity .eventDetails {
+  width: 285px;
+  height: 375px;
+  position: relative;
+}
+
+#activity .startUp .startUpDetails {
+  width: 285px;
+  height: 301px;
+  position: relative;
+}
+
+#activity .club .clubDetails {
+  width: 285px;
+  height: 306px;
+  position: relative;
+}
+
 #activity .school .schoolDetails {
   width: 285px;
   height: 384px;
   position: relative;
 }
 
-#activity .school .schoolDetails h3 {
+#activity h3 {
   font-size: 22px;
-  line-height: 40px;
+  line-height: 44px;
   margin: 0;
   font-weight: normal;
 }
 
-#activity .school .schoolDetails p {
+#activity p {
   font-size: 16px;
   line-height: 29px;
   font-weight: normal;
@@ -1982,18 +1164,136 @@ header .loginBtn:before {
   position: relative;
 }
 
-#activity .school .schoolDetails .readMore {
+#activity .itTool .itToolDetails .readMore,
+#activity .event .eventDetails .readMore {
+  position: absolute;
+  top: 98%;
+  margin-left: 15px;
+}
+
+#activity .startUp .startUpDetails .readMore {
+  position: absolute;
+  top: 89%;
+  margin-left: 15px;
+}
+
+#activity .club .clubDetails .readMore {
   position: absolute;
   top: 88%;
   margin-left: 15px;
 }
 
-#activity .school a {
+#activity .courses .readMore {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 91%;
+  margin-left: 15px;
+}
+
+#activity .school .schoolDetails .readMore {
+  position: absolute;
+  top: 88%;
+  margin: 15px 0 0 15px;
+}
+
+#activity a {
+  text-decoration: none;
+  color: #272727;
+}
+
+#activity .itSentence {
+  width: 285px;
+  height: 450px;
+}
+
+#activity .nikoniko {
+  width: 285px;
+  height: 371px;
+}
+
+#activity .startUpSentence {
+  width: 285px;
+  height: 301px;
+}
+
+#activity .clubSentence {
+  width: 285px;
+  height: 312px;
+}
+
+#activity .courseSentenceFirst {
+  width: 285px;
+  height: 391px;
+}
+
+#activity .courseSentenceSecond {
+  width: 285px;
+  height: 488px;
+}
+
+#activity .commuteLink {
+  width: 285px;
+  height: 390px;
+}
+
+/*readmoreの前の矢印調整*/
+#activity .itTool .itToolDetails p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 110%;
+}
+
+#activity .event .eventDetails p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 120%;
+}
+
+#activity .startUp .startUpDetails p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
+}
+
+#activity .club .clubDetails p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 113%;
+}
+
+#activity .courses .courseDetailFirst p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 119%;
+}
+
+#activity .courses .courseDetailSecond p:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: url("../images/icon_arrow01.png") no-repeat;
+  position: absolute;
+  top: 109%;
 }
 
 #activity .school .schoolDetails p:before {
@@ -2006,11 +1306,43 @@ header .loginBtn:before {
   top: 139%;
 }
 
-#activity .schoolFlex .schoolDetails:hover {
+#activity .itToolFlex .itToolDetails:hover,
+#activity .eventFlex .eventDetails:hover,
+#activity .startUpFlex .startUpDetails:hover,
+#activity .clubFlex .clubDetails:hover,
+#activity .schoolFlex .schoolDetails:hover,
+#activity .courses .courseDetailFirst:hover,
+#activity .courses .courseDetailSecond:hover {
   filter: alpha(opacity=70);
   opacity: 0.7;
 }
 
+#activity .course {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 1448px;
+}
+
+#activity .courses .courseDetailFirst {
+  width: 285px;
+  height: 384px;
+  position: relative;
+}
+
+#activity .courses .courseDetailSecond {
+  width: 285px;
+  height: 479px;
+  position: relative;
+}
+
+#activity .course h3 {
+  font-size: 22px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* N高って？ */
 #activity .whatIsNkou {
   width: 1060px;
   margin: 100px auto;
@@ -2021,44 +1353,43 @@ header .loginBtn:before {
   height: 300px;
 }
 
+#activity .whatIsNkou:hover {
+  opacity: 0.8;
+}
+
 /* 画像サイズ指定 */
 #activity .activityImg {
   width: 719px;
   height: 503px;
 }
 
-/* 画像ホバー時の装飾 */
-#activity a:hover {
-  opacity: 0.7;
-}
-
-#activity .aboutNkou {
+#activity .aboutNav {
   background-color: #f7f7f7;
   height: 450px;
   margin-bottom: 82px;
 }
 
-#activity .aboutNkou .aboutNkouCenter {
+#activity .aboutNav .aboutNavCenter {
   width: 1040px;
   height: 328px;
   margin: 0 auto;
   padding-top: 70px;
 }
 
-#activity .aboutNkou .aboutNkouCenter .title {
+#activity .aboutNav .aboutNavCenter .title {
   font-size: 25px;
   line-height: 45px;
   width: 409px;
   font-weight: normal;
 }
 
-#activity .aboutNkou .aboutNkou01 {
+#activity .aboutNav .aboutNavTop {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
 }
 
-#activity .aboutNkou .aboutNkou01 ul:before {
+#activity .aboutNav .aboutNavTop ul:before {
   content: "";
   display: inline-block;
   background-image: url("../images/arrow_black.png");
@@ -2070,7 +1401,7 @@ header .loginBtn:before {
   left: 95%;
 }
 
-#activity .aboutNkou .aboutNkou01 ul {
+#activity .aboutNav .aboutNavTop ul {
   width: 477px;
   height: 133px;
   list-style: none;
@@ -2080,51 +1411,46 @@ header .loginBtn:before {
   position: relative;
 }
 
-#activity .aboutNkou .stripe01 {
+#activity .aboutNav .stripeTop {
   background-image: url("../images/about_background.png");
   width: 489px;
   height: 145px;
 }
 
-#activity .aboutNkou .aboutNkou01 .aboutNkouUl01,
-#activity .aboutNkou .aboutNkou01 .aboutNkouUl02,
-#activity .aboutNkou .aboutNkou02 .aboutNkouUl03,
-#activity .aboutNkou .aboutNkou02 .aboutNkouUl04 {
+#activity .aboutNavCenter ul {
   margin: 6px 0 0 6px;
   background-color: #ffffff;
   padding-left: 30px;
 }
 
-#activity .aboutNkou .aboutNkou01 .aboutNkouUl01:hover,
-#activity .aboutNkou .aboutNkou01 .aboutNkouUl02:hover,
-#activity .aboutNkou .aboutNkou02 .aboutNkouUl03:hover,
-#activity .aboutNkou .aboutNkou02 .aboutNkouUl04:hover {
+#activity .aboutNavCenter ul:hover {
   opacity: 0.8;
 }
 
-#activity .aboutNkou .aboutNkou01 ul li {
+#activity .aboutNav .aboutNavTop ul li,
+#activity .aboutNav .aboutNavBottom ul li {
   font-size: 13px;
   line-height: 23px;
   width: 409px;
 }
 
-#activity .aboutNkou a {
+#activity .aboutNav a {
   text-decoration: none;
   color: #272727;
 }
 
-#activity .aboutNkou .aboutNkou02 {
+#activity .aboutNav .aboutNavBottom {
   display: flex;
   justify-content: space-between;
 }
 
-#activity .aboutNkou .stripe02 {
+#activity .aboutNav .stripeBottom {
   background-image: url("../images/about_background.png");
   width: 489px;
   height: 123px;
 }
 
-#activity .aboutNkou .aboutNkou02 ul {
+#activity .aboutNav .aboutNavBottom ul {
   width: 477px;
   height: 111px;
   list-style: none;
@@ -2134,7 +1460,7 @@ header .loginBtn:before {
   position: relative;
 }
 
-#activity .aboutNkou .aboutNkou02 ul:before {
+#activity .aboutNav .aboutNavBottom ul:before {
   content: "";
   display: inline-block;
   background-image: url("../images/arrow_black.png");
@@ -2144,12 +1470,6 @@ header .loginBtn:before {
   position: absolute;
   top: 50%;
   left: 95%;
-}
-
-#activity .aboutNkou .aboutNkou02 ul li {
-  font-size: 13px;
-  line-height: 23px;
-  width: 409px;
 }
 
 #detail {
@@ -2351,8 +1671,7 @@ header .loginBtn:before {
 }
 
 #detail .nkouDetail02 div p:hover::before {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
-    brightness(107%);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%);
 }
 
 #detail .otherSchools {
@@ -2564,9 +1883,20 @@ footer .snsBtn .twitter {
   width: 155px;
   height: 48px;
   padding-top: 10px;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
   border-right: solid 1px #cccccc;
+  position: relative;
+}
+
+footer .snsBtn .twitter:after {
+  content: ">";
+  display: inline-block;
+  top: 30%;
+  left: 90%;
+  position: absolute;
+  color: #cccccc;
 }
 
 footer .snsBtn .twitter:hover {
@@ -2577,9 +1907,20 @@ footer .snsBtn .facebook {
   width: 155px;
   height: 48px;
   padding-top: 10px;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
   border-right: solid 1px #cccccc;
+}
+
+footer .snsBtn .facebook:after {
+  content: ">";
+  display: inline-block;
+  top: 30%;
+  left: 90%;
+  position: absolute;
+  color: #cccccc;
 }
 
 footer .snsBtn .facebook:hover {
@@ -2587,11 +1928,22 @@ footer .snsBtn .facebook:hover {
 }
 
 footer .snsBtn .youtube {
-  width: 155px;
+  width: 190px;
   height: 48px;
   padding-top: 10px;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+footer .snsBtn .youtube:after {
+  content: ">";
+  display: inline-block;
+  top: 30%;
+  left: 90%;
+  position: absolute;
+  color: #cccccc;
 }
 
 footer .snsBtn .youtube:hover {
